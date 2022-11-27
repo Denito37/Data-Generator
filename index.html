@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Generator">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Data Generator</title>
+</head>
+<body id="main">
+    <header>
+        <h1>Data Chart Generator <button id="dMode"></button></h1>
+    </header>
+
+    <main>
+        <form action="/">
+            <fieldset>
+                <label for="chartType">Select Chart Type:</label>
+                <select name="chartType" id="chartType">
+                    <option value="bar"> bar</option>
+                    <option value="line">line</option>
+                    <option value="pie">pie</option>
+                </select>
+                <label for="data"> Enter numbers seperated by a space:</label>
+                <textarea name="data" id="data" cols="30" rows="15"></textarea> 
+                <label for="upload">Upload file:</label>
+                <input type="file" id="upload">
+                <button type="submit">Generate</button>
+            </fieldset>
+        </form>
+
+        <section class="graphSection">
+            <canvas class="graph"></canvas>
+            <div class="output">
+                <p>Min: <span id="min"></span></p>
+                <p>Max: <span id="max"></span></p>
+                <p>Median: <span id="median"></span></p>
+                <p>Mode: <span id="mode"></span></p>
+                <p>Variance: <span id="variance"></span></p>
+                <p>St.dev: <span id="stDev"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
