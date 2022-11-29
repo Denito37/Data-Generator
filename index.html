@@ -7,11 +7,12 @@
     <meta name="description" content="Data Generator">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <title>Data Generator</title>
 </head>
 <body id="main">
     <header>
-        <h1>Data Chart Generator <button id="dMode"></button></h1>
+        <h1>Data Chart Generator <button id="dMode"></button> <button id="lMode"></button></h1>
     </header>
 
     <main>
@@ -23,11 +24,9 @@
                     <option value="line">line</option>
                     <option value="pie">pie</option>
                 </select>
-                <label for="data"> Enter numbers seperated by a space:</label>
+                <label for="data" id="label"> Enter numbers seperated by a space:</label>
                 <textarea name="data" id="data" cols="30" rows="15"></textarea> 
-                <label for="upload">Upload file:</label>
-                <input type="file" id="upload">
-                <button type="submit">Generate</button>
+                <button type="submit" id="submit">Generate</button>
             </fieldset>
         </form>
 

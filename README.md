@@ -5,7 +5,7 @@
 **Built With**
 - HTML5
 - CSS
-- TypeScript
+- JavsScript
 - Js Chart
 
 **Features**

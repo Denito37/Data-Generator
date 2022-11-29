@@ -15,7 +15,6 @@
     --txt-clr:#fff;
     --cntnt-clr:#323D4D;
     --accnt-clr:#EC2626;
-    --mde-grd: #DFDFDF, #4F43AE;
 }
 
 
@@ -41,6 +40,9 @@ header button{
     position: relative;
     bottom: .6rem;
 }
+header #lMode{
+    background: linear-gradient(#DFDFDF, #4F43AE);
+}
 /** *Main **/
 main{
     display: flex;
@@ -50,7 +52,6 @@ main{
 /** *Form **/
 form{
     background-color: var(--cntnt-clr);
-    border: solid 1px var(--accnt-clr);
     border-radius: 1.5rem;
     margin: 1rem 2rem;
     padding: 2rem;
@@ -58,12 +59,16 @@ form{
 fieldset{
     display: flex;
     flex-direction: column;
+    min-height: 500px;
     row-gap: 1rem;
     border: solid 0px;
 }
 fieldset label{
     font-weight: var(--fnt-bld);
     text-align: center;
+}
+fieldset #label{
+    margin-top: 2rem;
 }
 fieldset select{
     border: 1.5px solid var(--accnt-clr);
@@ -83,6 +88,7 @@ fieldset button{
     font-family: 'Roboto',sans-serif;
     font-size: 1rem;
     font-weight: var(--fnt-bld);
+    margin-top: 2rem;
     padding: .6rem 1.2rem;
     max-width: 120px;
     border: solid 0px;
@@ -95,7 +101,6 @@ fieldset button:hover{
 /** *Chart **/
 section{
     background-color: var(--cntnt-clr);
-    border: solid 1px var(--accnt-clr);
     border-radius: 1.5rem;
     font-weight: var(--fnt-nrml);
     margin: 1rem 2rem;
@@ -111,7 +116,7 @@ section .output{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0rem 1rem;
+    padding: 0rem 3rem;
     column-gap: 1rem;
     border: 1px solid var(--accnt-clr);
     border-radius: 1.5rem;
