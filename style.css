@@ -4,8 +4,8 @@
     --txt-clr:#000;
     --cntnt-clr:#DFDFDF;
     --accnt-clr:#4F43AE;
-    --mde-grd: #323D4D, #EC2626;
-    --ftr-clr:#535255;
+    --mde-grd: #323D4D 30%, #EC2626;
+    --ftr-clr:hsl(216, 21%, 15%);
     --fnt-lght: 100;
     --fnt-nrml: 300;
     --fnt-bld: 500;
@@ -13,7 +13,7 @@
 .darkMode{
     --cntnt-clr:#5E7596;
     --txt-clr:#fff;
-    --bg-clr:#323D4D;
+    --bg-clr:hsl(216, 21%, 25%) 70%,hsl(216, 21%, 15%) ;
     --accnt-clr:hsl(0, 61%, 47%);
 }
 
@@ -23,6 +23,7 @@ body{
     margin: 0;
     font-family: 'Roboto',sans-serif;
     background-color: var(--bg-clr);
+    background:linear-gradient(var(--bg-clr));
     color: var(--txt-clr);
 }
 header h1{
@@ -40,13 +41,12 @@ header button{
     bottom: .6rem;
 }
 header #lMode{
-    background: linear-gradient(#DFDFDF, #4F43AE);
+    background: linear-gradient(#DFDFDF 30%, #4F43AE);
 }
 /** *Main **/
 main{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
 }
 /** *Form **/
 form{
@@ -70,12 +70,13 @@ fieldset #label{
     margin-top: 2rem;
 }
 fieldset select{
-    border: 1.5px solid var(--accnt-clr);
-    border-radius: .5rem;
+    border: 2px solid var(--accnt-clr);
+    border-radius: 1rem;
+    padding: 0rem 1rem;
     font-family: inherit;
 }
 fieldset textarea{
-    border: 1.5px solid var(--accnt-clr);
+    border: 2px solid var(--accnt-clr);
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -115,8 +116,8 @@ section .output{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 0rem 3rem;
-    column-gap: 1rem;
-    border: 1px solid var(--accnt-clr);
+    column-gap: 1.5rem;
+    border: 2px solid var(--accnt-clr);
     border-radius: 1.5rem;
     background-color: #fff;
     color: #000;

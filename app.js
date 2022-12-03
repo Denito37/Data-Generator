@@ -65,18 +65,27 @@ btn.addEventListener('click', (e) =>{
             }]
         },
         options: {
-            legend: {display: false},
+            legend: {
+                display: true,
+                position: 'top'
+            },
             scales: {
                 yAxes:[{
                     gridLines:{
                         display:false,
                         color:'black'
+                    },
+                    ticks:{
+                        fontColor:'#000'
                     }
                 }],
                 xAxes:[{
                     gridLines:{
                         display:false,
                         color:'black'
+                    },
+                    ticks:{
+                        fontColor:'#000'
                     }
                 }],
             }
