@@ -12,7 +12,9 @@
 </head>
 <body id="main">
     <header>
-        <h1>Data Chart Generator <button id="dMode"></button> <button id="lMode"></button></h1>
+        <h1>Data Chart Generator 
+        <button id="dMode"></button> 
+        <button id="lMode"></button></h1>
     </header>
 
     <main>
@@ -20,9 +22,11 @@
             <fieldset>
                 <label for="chartType">Select Chart Type:</label>
                 <select name="chartType" id="chartType">
-                    <option value="bar"> bar</option>
-                    <option value="line">line</option>
-                    <option value="pie">pie</option>
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="bar"> Bar</option>
+                    <option value="line">Line</option>
+                    <option value="doughnut">Doughnut</option>
+                    <option value="pie">Pie</option>
                 </select>
                 <label for="data" id="label"> Enter numbers seperated by a space:</label>
                 <textarea name="data" id="data" cols="30" rows="15"></textarea> 
@@ -35,7 +39,7 @@
             <div class="output">
                 <p>Min: <span id="min"></span></p>
                 <p>Max: <span id="max"></span></p>
-                <p>Median: <span id="median"></span></p>
+                <p>Mean: <span id="mean"></span></p>
                 <p>Mode: <span id="mode"></span></p>
                 <p>Variance: <span id="variance"></span></p>
                 <p>St.dev: <span id="stDev"></span></p>
@@ -44,7 +48,6 @@
     </main>
 
     <footer>
-
     </footer>
 </body>
 </html>

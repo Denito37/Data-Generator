@@ -11,8 +11,7 @@
 **Features**
 - input data to generate Charts
 - generates select info based on the data inputed (ex: min/max)
-- allows 3 types of charts to be changed seamlessly
-- allows external file uploads 
+- allows multiple types of charts to be changed seamlessly
 - dark mode to give a better viewing experience for users who prefer it
 
 **Purpose**

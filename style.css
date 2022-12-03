@@ -11,12 +11,11 @@
     --fnt-bld: 500;
 }
 .darkMode{
-    --bg-clr:#5E7596;
+    --cntnt-clr:#5E7596;
     --txt-clr:#fff;
-    --cntnt-clr:#323D4D;
-    --accnt-clr:#EC2626;
+    --bg-clr:#323D4D;
+    --accnt-clr:hsl(0, 61%, 47%);
 }
-
 
 /** *General + Header **/
 body{
@@ -73,13 +72,12 @@ fieldset #label{
 fieldset select{
     border: 1.5px solid var(--accnt-clr);
     border-radius: .5rem;
+    font-family: inherit;
 }
 fieldset textarea{
     border: 1.5px solid var(--accnt-clr);
     border-radius: 1rem;
-}
-fieldset input[type=file]{
-    margin: auto;
+    padding: 1rem;
 }
 fieldset button{
     background-color: var(--accnt-clr);
@@ -136,5 +134,9 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    section canvas{
+        max-width: 600px;
+        min-height: 400px;
     }
 }
